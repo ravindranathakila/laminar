@@ -1,0 +1,11 @@
+- hosts: 127.0.0.1
+  connection: local
+  roles:
+    - flowmaster-google-chrome
+    - flowmaster-iterm2
+    - flowmaster-oh-my-zsh
+    - flowmaster-dropbox
+    - flowmaster-viber
+    - flowmaster-skype
+    - flowmaster-git
+

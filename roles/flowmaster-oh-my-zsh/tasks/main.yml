@@ -1,0 +1,16 @@
+---
+# tasks file for flowmaster-oh-my-zsh
+- homebrew:
+    name: zsh
+    state: present
+- homebrew:
+    name: zsh-completions
+    state: present
+- shell: "curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh"
+- lineinfile:
+    dest: ~/.zshrc
+    regexp: '^ZSH_THEME='
+    line: ZSH_THEME="agnoster"
+
+
+

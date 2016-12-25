@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-google-chrome
+- homebrew_cask:
+    name: google-chrome
+    state: present

@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-skype
+- homebrew_cask:
+    name: skype
+    state: present

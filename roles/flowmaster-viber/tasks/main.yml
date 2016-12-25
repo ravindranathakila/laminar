@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-viber
+- homebrew_cask:
+    name: viber
+    state: present

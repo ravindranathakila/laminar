@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-dropbox
+- homebrew_cask:
+    name: dropbox
+    state: present

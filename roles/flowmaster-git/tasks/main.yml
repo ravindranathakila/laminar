@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-git
+- homebrew:
+    name: git
+    state: present
