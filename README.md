@@ -1,5 +1,12 @@
 # laminar
-You are the flow 
+"You are the flow"
+
+Laminar,is an initiative to train oneself as a Flow Master. 
+
+What is Flow? Flow is when you're performing optimally, becoming a part of the system you're interacting with. More info here: https://en.m.wikipedia.org/wiki/Flow_(psychology)
+
+Why is the initiative named Laminar? Laminar flow of a liquid is a state without turbulence. Nothing tries to be special, not even a ripple. This is how a Flow Master works too. 
+
 
 ## Introduction 
 
@@ -9,7 +16,7 @@ In order to be a Flow Master, you need to follow a few steps.
 
 ## Define 
 
-Define the essential skills required for a to Flow. For example, "What skill do you need to get in the mood to work?". It could be a couple of minutes of meditation or a quick jog. Define it. 
+Define the essential skills required for a to Flow. For example. What skill do you need to get in the mood to work?". It could be a couple of minutes of meditation or a quick jog. Define it. 
 
 ## Eliminate 
 
