@@ -1,3 +1,7 @@
+Visualization Flows 
+Mind Mapping 
+
+
 Init Flows 
 
 AWS CLI 
@@ -31,3 +35,7 @@ Grails
 SBT 
 NPM 
 
+
+Website Flows 
+
+Polymer, Angular 2 
