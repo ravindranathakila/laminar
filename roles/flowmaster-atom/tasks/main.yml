@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-atom
+- homebrew_cask:
+    name: atom
+    state: present

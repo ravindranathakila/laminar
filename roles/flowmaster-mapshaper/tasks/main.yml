@@ -1,0 +1,6 @@
+---
+# tasks file for flowmaster-mapshaper
+- npm:
+    name: mapshaper
+    state: present
+    global: yes

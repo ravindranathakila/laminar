@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-maven
+- homebrew:
+    name: maven
+    state: present

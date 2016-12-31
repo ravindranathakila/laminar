@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-intellij-idea
+- homebrew_cask:
+    name: intellij-idea
+    state: present

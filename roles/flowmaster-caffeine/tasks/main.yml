@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-caffeine
+- homebrew_cask:
+    name: caffeine
+    state: present

@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-nosleep
+- homebrew_cask:
+    name: nosleep
+    state: present

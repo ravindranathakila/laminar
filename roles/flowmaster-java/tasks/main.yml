@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-java
+- homebrew_cask:
+    name: java
+    state: present

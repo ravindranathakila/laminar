@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-scala
+- homebrew:
+    name: scala
+    state: present

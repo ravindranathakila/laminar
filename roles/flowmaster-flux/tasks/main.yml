@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-flux
+- homebrew_cask:
+    name: flux
+    state: present

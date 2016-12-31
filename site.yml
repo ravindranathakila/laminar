@@ -1,6 +1,9 @@
 - hosts: 127.0.0.1
   connection: local
   roles:
+    - flowmaster-transmit
+    - flowmaster-node
+    - flowmaster-mapshaper
     - flowmaster-google-chrome
     - flowmaster-iterm2
     - flowmaster-oh-my-zsh
@@ -8,4 +11,17 @@
     - flowmaster-viber
     - flowmaster-skype
     - flowmaster-git
+    - flowmaster-sublime-text
+    - flowmaster-atom
+    - flowmaster-nosleep
+    - flowmaster-caffeine
+    - flowmaster-intellij-idea
+    - flowmaster-java
+    - flowmaster-scala
+    - flowmaster-sbt
+    - flowmaster-maven
+    - flowmaster-flux
+    - flowmaster-teamviewer
+
+
 
