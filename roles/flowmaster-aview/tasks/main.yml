@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-aview
+- homebrew:
+    name: aview
+    state: present
