@@ -16,6 +16,7 @@
     - flowmaster-sublime-text
     - flowmaster-atom
     - flowmaster-atom-git
+    - flowmaster-atom-language-ansible
     - flowmaster-nosleep
     - flowmaster-caffeine
     - flowmaster-intellij-idea
@@ -28,4 +29,3 @@
     - flowmaster-teamviewer
     - flowmaster-aview
     - flowmaster-espeak
-    

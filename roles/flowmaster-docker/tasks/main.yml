@@ -3,3 +3,10 @@
 - homebrew_cask:
     name: docker-toolbox
     state: present
+  when: ansible_os_family == "Darwin"
+- name: Docker
+  yum:
+    name: "docker"
+    state: present
+  become: yes
+  when: ansible_os_family == "RedHat"

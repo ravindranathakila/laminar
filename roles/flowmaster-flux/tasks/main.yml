@@ -3,3 +3,4 @@
 - homebrew_cask:
     name: flux
     state: present
+  when: ansible_os_family == "Darwin"

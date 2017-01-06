@@ -1,0 +1,4 @@
+---
+# tasks file for flowmaster-atom-language-ansible
+- shell: apm install language-ansible
+  when: ansible_os_family == "Darwin"
