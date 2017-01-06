@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-docker-toolbox
+- homebrew_cask:
+    name: docker-toolbox
+    state: present

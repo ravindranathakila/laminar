@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-spectacle
+- homebrew_cask:
+    name: spectacle
+    state: present
