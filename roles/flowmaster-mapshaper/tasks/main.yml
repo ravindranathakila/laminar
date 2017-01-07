@@ -4,4 +4,11 @@
     name: mapshaper
     state: latest
     global: yes
+  when: ansible_os_family == "Darwin"
+
+- npm:
+    name: mapshaper
+    state: latest
+    global: yes
   become: yes
+  when: ansible_os_family == "RedHat"
