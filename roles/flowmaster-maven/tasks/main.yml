@@ -8,7 +8,7 @@
 
 - name: maven
   yum:
-    name: "maven"
+    name: "apache-maven"
     state: latest
   become: yes
   when: ansible_os_family == "RedHat"
