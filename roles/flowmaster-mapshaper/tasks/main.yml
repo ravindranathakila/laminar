@@ -4,3 +4,4 @@
     name: mapshaper
     state: present
     global: yes
+  when: ansible_os_family == "Darwin"

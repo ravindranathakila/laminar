@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-yum-update
+- shell: yum update -y
+  become: yes
+  when: ansible_os_family == "RedHat"

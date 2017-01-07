@@ -3,3 +3,4 @@
 - homebrew:
     name: maven
     state: present
+  when: ansible_os_family == "Darwin"

@@ -1,6 +1,8 @@
 - hosts: 127.0.0.1
   connection: local
   roles:
+    - flowmaster-spectacle
+    - flowmaster-docker
     - flowmaster-transmit
     - flowmaster-node
     - flowmaster-mapshaper
@@ -14,9 +16,11 @@
     - flowmaster-sublime-text
     - flowmaster-atom
     - flowmaster-atom-git
+    - flowmaster-atom-language-ansible
     - flowmaster-nosleep
     - flowmaster-caffeine
     - flowmaster-intellij-idea
+    - flowmaster-webstorm
     - flowmaster-java
     - flowmaster-scala
     - flowmaster-sbt
@@ -25,4 +29,3 @@
     - flowmaster-teamviewer
     - flowmaster-aview
     - flowmaster-espeak
-    

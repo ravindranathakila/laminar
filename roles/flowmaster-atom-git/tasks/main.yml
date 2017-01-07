@@ -1,3 +1,4 @@
 ---
 # tasks file for flowmaster-atom-git
 - shell: apm install git-control
+  when: ansible_os_family == "Darwin"

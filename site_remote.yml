@@ -1,0 +1,13 @@
+- hosts: remote
+  roles:
+    - flowmaster-docker
+    - flowmaster-node
+    - flowmaster-mapshaper
+    - flowmaster-oh-my-zsh
+    - flowmaster-git
+    - flowmaster-java
+    - flowmaster-scala
+    - flowmaster-sbt
+    - flowmaster-maven
+    - flowmaster-aview
+    - flowmaster-espeak

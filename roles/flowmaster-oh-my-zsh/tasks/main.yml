@@ -3,14 +3,15 @@
 - homebrew:
     name: zsh
     state: present
+  when: ansible_os_family == "Darwin"
 - homebrew:
     name: zsh-completions
     state: present
+  when: ansible_os_family == "Darwin"
 - shell: "curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh"
+  when: ansible_os_family == "Darwin"
 - lineinfile:
     dest: ~/.zshrc
     regexp: '^ZSH_THEME='
     line: ZSH_THEME="agnoster"
-
-
-
+  when: ansible_os_family == "Darwin"

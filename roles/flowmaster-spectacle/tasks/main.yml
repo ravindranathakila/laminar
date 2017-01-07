@@ -1,0 +1,6 @@
+---
+# tasks file for flowmaster-spectacle
+- homebrew_cask:
+    name: spectacle
+    state: present
+  when: ansible_os_family == "Darwin"
