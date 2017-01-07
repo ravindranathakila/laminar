@@ -6,5 +6,4 @@
     clone: no
     update: yes
     force: no
-    accept_hostkey: true
   when: ansible_os_family == "Darwin"
