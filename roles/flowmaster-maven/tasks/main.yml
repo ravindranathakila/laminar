@@ -4,3 +4,11 @@
     name: maven
     state: present
   when: ansible_os_family == "Darwin"
+
+
+- name: maven
+  yum:
+    name: "maven"
+    state: latest
+  become: yes
+  when: ansible_os_family == "RedHat"

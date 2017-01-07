@@ -4,3 +4,10 @@
     name: git
     state: present
   when: ansible_os_family == "Darwin"
+
+- name: git
+  yum:
+    name: "git"
+    state: latest
+  become: yes
+  when: ansible_os_family == "RedHat"

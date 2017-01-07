@@ -2,6 +2,6 @@
 # tasks file for flowmaster-mapshaper
 - npm:
     name: mapshaper
-    state: present
+    state: latest
     global: yes
-  when: ansible_os_family == "Darwin"
+  become: yes

@@ -4,9 +4,9 @@
     name: docker-toolbox
     state: present
   when: ansible_os_family == "Darwin"
-- name: Docker
+- name: docker
   yum:
     name: "docker"
-    state: present
+    state: latest
   become: yes
   when: ansible_os_family == "RedHat"

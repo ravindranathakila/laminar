@@ -4,3 +4,10 @@
     name: java
     state: present
   when: ansible_os_family == "Darwin"
+
+- name: java
+  yum:
+    name: "java"
+    state: latest
+  become: yes
+  when: ansible_os_family == "RedHat"

@@ -4,3 +4,19 @@
     name: node
     state: present
   when: ansible_os_family == "Darwin"
+
+- name: nodejs
+  yum:
+    name: "nodejs"
+    state: latest
+    enablerepo: epel
+  become: yes
+  when: ansible_os_family == "RedHat"
+
+- name: npm
+  yum:
+    name: "npm"
+    state: latest
+    enablerepo: epel
+  become: yes
+  when: ansible_os_family == "RedHat"
