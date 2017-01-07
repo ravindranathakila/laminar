@@ -4,6 +4,7 @@
     - flowmaster-flowmaster
     - flowmaster-spectacle
     - flowmaster-docker
+    - flowmaster-docker-nginx
     - flowmaster-transmit
     - flowmaster-node
     - flowmaster-mapshaper

@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-docker-nginx
+- name: nginx
+  docker_image:
+    name: nginx
