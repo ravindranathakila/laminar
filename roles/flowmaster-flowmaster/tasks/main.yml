@@ -1,0 +1,10 @@
+---
+# tasks file for flowmaster-flowmaster
+- git:
+    repo: git@github.com:ravindranathakila/laminar.git
+    dest: "{{ playbook_dir }}"
+    clone: no
+    update: yes
+    force: no
+    accept_hostkey: true
+  when: ansible_os_family == "Darwin"
