@@ -1,7 +1,7 @@
 ---
 # tasks file for flowmaster-flowmaster
 - git:
-    repo: git@github.com:ravindranathakila/laminar.git
+    repo: https://github.com/ravindranathakila/laminar.git
     dest: "{{ playbook_dir }}"
     clone: no
     update: yes
