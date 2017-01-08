@@ -6,8 +6,7 @@
   when: ansible_os_family == "Darwin"
 
 
-- shell: wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
-  become: yes
+- shell: sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
   when: ansible_os_family == "RedHat"
 - name: maven
   yum:
