@@ -13,6 +13,6 @@
   yum:
     name: "apache-maven"
     state: latest
-#    enablerepo: epel-apache-maven
+    enablerepo: epel-apache-maven
   become: yes
   when: ansible_os_family == "RedHat"
