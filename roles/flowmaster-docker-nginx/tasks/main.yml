@@ -5,6 +5,10 @@
     name: nginx
   become: yes
 
+- synchronize:
+    src: "{{ role_path }}/files/"
+    dest: "/tmp/html"
+
 - docker_container:
     name: nginx
     state: started
@@ -13,5 +17,5 @@
      - "80:80"
     exposed_ports:
       - 80
-    volumes: "/tmp:/tmp"
+    volumes: "/tmp/html/:/usr/share/nginx/html/"
   become: yes
