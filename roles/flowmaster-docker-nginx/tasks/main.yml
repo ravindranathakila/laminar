@@ -3,4 +3,12 @@
 - name: nginx
   docker_image:
     name: nginx
-  become_user: root
+  become: yes
+
+- docker_container:
+    name: nginx
+    state: present
+    image: nginx:latest
+    command: sleep infinity
+    published_ports: "80:80"
+  become: yes
