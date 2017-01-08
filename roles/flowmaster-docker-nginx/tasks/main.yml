@@ -13,4 +13,5 @@
      - "80:80"
     exposed_ports:
       - 80
+    volumes: "/tmp:/tmp"
   become: yes
