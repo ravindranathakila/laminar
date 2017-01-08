@@ -1,6 +1,7 @@
 - hosts: remote
   roles:
     - flowmaster-flowmaster
+    - flowmaster-ansible
     - flowmaster-spectacle
     - flowmaster-docker
     - flowmaster-docker-nginx

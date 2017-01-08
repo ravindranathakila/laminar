@@ -10,3 +10,9 @@
     state: latest
   become: yes
   when: ansible_os_family == "RedHat"
+- pip:
+    name: docker-py
+    state: latest
+  become: yes
+  when: ansible_os_family == "RedHat"
+
