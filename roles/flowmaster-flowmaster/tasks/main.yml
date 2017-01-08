@@ -4,6 +4,6 @@
     repo: https://github.com/ravindranathakila/laminar.git
     dest: "{{ playbook_dir }}"
     clone: no
-    update: yes
+    update: no
     force: no
   when: ansible_os_family == "Darwin"
