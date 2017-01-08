@@ -5,7 +5,6 @@
     state: present
   when: ansible_os_family == "Darwin"
 
-
 - shell: sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
   become: yes
   when: ansible_os_family == "RedHat"
