@@ -7,9 +7,8 @@
 
 - docker_container:
     name: nginx
-    state: present
+    state: started
     image: nginx
-    command: service nginx start
     ports:
      - "80:80"
     exposed_ports:
