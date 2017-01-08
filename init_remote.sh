@@ -1,1 +1,1 @@
-ansible-playbook -i hosts site_remote.yml
+ansible-playbook -i hosts site.yml
