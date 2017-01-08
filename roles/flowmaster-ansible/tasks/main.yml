@@ -11,15 +11,8 @@
   become: yes
   when: ansible_os_family == "RedHat"
 - easy_install:
-    name: virtualenv
-    state: latest
-  become: yes
-  when: ansible_os_family == "RedHat"
-- easy_install:
     name: pip
     state: latest
-  when: ansible_os_family == "RedHat"
 - easy_install:
     name: virtualenv
     state: latest
-  when: ansible_os_family == "RedHat"

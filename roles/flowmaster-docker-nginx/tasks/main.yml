@@ -3,3 +3,4 @@
 - name: nginx
   docker_image:
     name: nginx
+  become_user: root
