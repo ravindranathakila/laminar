@@ -1,0 +1,21 @@
+---
+# tasks file for flowmaster-docker-spring-springxd
+- name: singlenode
+  docker_image:
+    name: springxd/singlenode
+  become: yes
+
+- name: shell
+  docker_image:
+    name: springxd/shell
+  become: yes
+
+- docker_container:
+    name: springxd/singlenode
+    state: started
+    image: nginx
+    ports:
+     - "9393:9393"
+    exposed_ports:
+      - 9393
+  become: yes

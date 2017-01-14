@@ -1,10 +1,13 @@
 - hosts: flowmaster
   roles:
+    - flowmaster-spark
+    - flowmaster-spring-springxd
     - flowmaster-flowmaster
     - flowmaster-ansible
     - flowmaster-spectacle
     - flowmaster-docker
     - flowmaster-docker-nginx
+    - flowmaster-docker-spring-springxd
     - flowmaster-transmit
     - flowmaster-node
     - flowmaster-mapshaper

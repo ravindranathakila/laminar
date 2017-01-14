@@ -1,0 +1,6 @@
+---
+# tasks file for flowmaster-spark
+- homebrew:
+    name: apache-spark
+    state: present
+  when: ansible_os_family == "Darwin"

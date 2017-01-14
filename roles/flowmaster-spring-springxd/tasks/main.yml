@@ -1,0 +1,9 @@
+---
+# tasks file for flowmaster-spring-springxd
+- homebrew_tap:
+    name: pivotal/tap
+  when: ansible_os_family == "Darwin"
+- homebrew:
+    name: springxd
+    state: present
+  when: ansible_os_family == "Darwin"
