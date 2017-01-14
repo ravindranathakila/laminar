@@ -16,6 +16,9 @@
     image: springxd/singlenode
     ports:
      - "9393:9393"
+     - "9000:9000"
     exposed_ports:
       - 9393
+      - 9000
+    volumes: "/tmp/springxd/:/tmp/springxd/"
   become: yes
