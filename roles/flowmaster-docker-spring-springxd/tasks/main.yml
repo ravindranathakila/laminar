@@ -11,9 +11,9 @@
   become: yes
 
 - docker_container:
-    name: springxd/singlenode
+    name: singlenode
     state: started
-    image: nginx
+    image: springxd/singlenode
     ports:
      - "9393:9393"
     exposed_ports:
