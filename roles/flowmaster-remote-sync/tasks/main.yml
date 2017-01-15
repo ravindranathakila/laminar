@@ -1,0 +1,5 @@
+---
+# tasks file for flowmaster-remote-sync
+- synchronize:
+    src: "{{ role_path }}/files/"
+    dest: "~/uploads"
