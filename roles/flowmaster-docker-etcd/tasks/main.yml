@@ -1,0 +1,8 @@
+---
+# tasks file for flowmaster-etcd
+- name: etcd
+  docker_image:
+    name: quay.io/coreos/etcd
+  become: yes
+
+f

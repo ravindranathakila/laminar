@@ -1,2 +1,6 @@
 ---
 # tasks file for flowmaster-kubernetes-cli
+- homebrew:
+    name: kubernetes-cli
+    state: present
+  when: ansible_os_family == "Darwin"

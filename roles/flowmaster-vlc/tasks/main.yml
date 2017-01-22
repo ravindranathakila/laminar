@@ -1,0 +1,6 @@
+---
+# tasks file for flowmaster-vlc
+- homebrew_cask:
+    name: vlc
+    state: present
+  when: ansible_os_family == "Darwin"
