@@ -1,0 +1,12 @@
+---
+# tasks file for flowmaster-kubernetes-kubectl
+# https://kubernetes.io/docs/user-guide/prereqs/
+- shell: curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl
+  when: ansible_os_family == "Darwin"
+- shell: curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  when: ansible_os_family == "RedHat"
+- shell: curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  when: ansible_os_family == "Debian"
+
+- shell: chmod +x ./kubectl
+- shell: sudo mv ./kubectl /usr/local/bin/kubectl

@@ -1,0 +1,6 @@
+---
+# tasks file for flowmaster-tiger-vnc
+- homebrew_cask:
+    name: tigervnc-viewer
+    state: present
+  when: ansible_os_family == "Darwin"

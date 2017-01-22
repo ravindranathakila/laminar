@@ -5,11 +5,21 @@
     state: latest
   become: yes
   when: ansible_os_family == "RedHat"
+- apt:
+    name: python-pip
+    state: latest
+  become: yes
+  when: ansible_os_family == "Debian"
 - yum:
     name: python-setuptools
     state: latest
   become: yes
   when: ansible_os_family == "RedHat"
+- apt:
+    name: python-setuptools
+    state: latest
+  become: yes
+  when: ansible_os_family == "Debian"
 - easy_install:
     name: pip
     state: latest

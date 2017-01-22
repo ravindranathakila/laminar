@@ -1,0 +1,49 @@
+---
+# tasks file for flowmaster-kubernetes-minikube
+# https://github.com/kubernetes/minikube/releases
+# minikube requires VirtualBox, and VirtualBox requires mainly a GUI based linux distro.
+#- yum:
+#    name: "{{item}}"
+#    state: latest
+#  with_items:
+#    - gcc
+#    - make
+#    - patch
+#    - dkms
+#    - libgomp
+#    - kernel-headers
+#    - kernel-devel
+#    - fontforge
+#    - binutils
+#    - glibc-headers
+#    - glibc-devel
+#    - qt
+#  become: yes
+#  when: ansible_os_family == "RedHat"
+#
+#- yum:
+#    name: virtualbox
+#    state: latest
+#  become: yes
+#  when: ansible_os_family == "RedHat"
+
+- apt:
+    name: virtualbox
+    state: latest
+  become: yes
+  when: ansible_os_family == "Debian"
+
+- homebrew:
+    name: virtualbox
+    state: present
+  when: ansible_os_family == "Darwin"
+
+- shell: curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.15.0/minikube-darwin-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+  when: ansible_os_family == "Darwin"
+#- shell: curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.15.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+#  when: ansible_os_family == "RedHat"
+- shell: curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.15.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+  when: ansible_os_family == "Debian"
+
+
+
