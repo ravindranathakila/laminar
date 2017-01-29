@@ -1,6 +1,11 @@
 # Visualization Flows 
 Mind Mapping 
 
+# Visualization Flow Kubernetes 
+
+https://m.youtube.com/watch?v=N6r-9ZzFgzw
+
+https://m.youtube.com/watch?v=Q4W8Z-D-gcQ
 
 # Init Flows 
 
