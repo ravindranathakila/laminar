@@ -1,0 +1,19 @@
+---
+# tasks file for flowmaster-youtube
+- pip:
+    name: mps-youtube
+    executable: pip3
+
+- pip:
+    name: youtube_dl
+    executable: pip3
+
+- homebrew:
+    name: mpv
+    state: latest
+  when: ansible_os_family == "Darwin"
+
+- homebrew:
+    name: mplayer
+    state: latest
+  when: ansible_os_family == "Darwin"

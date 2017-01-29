@@ -1,0 +1,22 @@
+---
+# tasks file for flowmaster-cordova
+
+- npm:
+    name: cordova
+    state: latest
+    global: yes
+  when: ansible_os_family == "Darwin"
+
+- npm:
+    name: cordova
+    state: latest
+    global: yes
+  become: yes
+  when: ansible_os_family == "RedHat"
+
+- npm:
+    name: cordova
+    state: latest
+    global: yes
+  become: yes
+  when: ansible_os_family == "Debian"

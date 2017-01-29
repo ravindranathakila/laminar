@@ -1,0 +1,6 @@
+---
+# tasks file for flowmaster-python3
+- homebrew:
+    name: python3
+    state: latest
+  when: ansible_os_family == "Darwin"
