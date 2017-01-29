@@ -1,0 +1,22 @@
+---
+# tasks file for flowmaster-ionic
+
+- npm:
+    name: ionic
+    state: latest
+    global: yes
+  when: ansible_os_family == "Darwin"
+
+- npm:
+    name: ionic
+    state: latest
+    global: yes
+  become: yes
+  when: ansible_os_family == "RedHat"
+
+- npm:
+    name: ionic
+    state: latest
+    global: yes
+  become: yes
+  when: ansible_os_family == "Debian"
