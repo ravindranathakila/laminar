@@ -1,0 +1,20 @@
+---
+# tasks file for flowmaster-build-spring-init
+- shell: "spring init --build={{ spring_maven_sbt }} --java-version=1.8 --packaging={{ spring_packaging }} --package-name={{ spring_packageName }} --artifactId={{ spring_artifactId }}  --dependencies={{ spring_dependecies_csv }} {{ playbook_dir }}/build/{{ spring_artifactId }}.zip"
+  register: out
+
+- debug: var=out
+
+- file:
+    path: "{{ playbook_dir }}/build/{{ spring_artifactId }}"
+    state: directory
+
+- unarchive:
+    src: "{{ playbook_dir }}/build/{{ spring_artifactId }}.zip"
+    dest: "{{ playbook_dir }}/build/{{ spring_artifactId }}"
+    list_files: yes
+
+- file:
+    path: "{{ playbook_dir }}/build/{{ spring_artifactId }}.zip"
+    state: absent
+
