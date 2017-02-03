@@ -1,0 +1,6 @@
+---
+# tasks file for flowmaster-archey
+- homebrew:
+    name: archey
+    state: present
+  when: ansible_os_family == "Darwin"

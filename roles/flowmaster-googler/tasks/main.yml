@@ -1,0 +1,6 @@
+---
+# tasks file for flowmaster-googler
+- homebrew:
+    name: googler
+    state: present
+  when: ansible_os_family == "Darwin"
