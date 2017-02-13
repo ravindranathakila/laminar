@@ -1,0 +1,7 @@
+---
+# tasks file for flowmaster-polymercli
+- npm:
+    name: polymer-cli
+    state: latest
+    global: yes
+  when: ansible_os_family == "Darwin"
