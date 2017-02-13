@@ -1,0 +1,6 @@
+---
+# tasks file for flowmaster-ncdu
+- homebrew:
+    name: ncdu
+    state: present
+  when: ansible_os_family == "Darwin"

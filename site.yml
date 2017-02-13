@@ -1,15 +1,22 @@
 - hosts: flowmaster
   roles:
+    - flowmaster-polymercli
+#    - flowmaster-ncdu
+#    - flowmaster-alfred
+#    - flowmaster-quicksilver
+#    - flowmaster-archey
+#    - flowmaster-googler
 #    - flowmaster-python3
 #    - flowmaster-ansible
 #    - flowmaster-tiger-vnc
 #    - flowmaster-docker-etcd
+#    - flowmaster-docker-cloudera
 #    - flowmaster-remote-sync
 #    - flowmaster-kubernetes-cli
 #    - flowmaster-kubernetes-minikube
 #    - flowmaster-kubernetes-kubectl
 #    - flowmaster-spark
-    - flowmaster-spring-springboot
+#    - flowmaster-spring-springboot
 #    - flowmaster-spring-springxd
 #    - flowmaster-flowmaster
 #    - flowmaster-spectacle
