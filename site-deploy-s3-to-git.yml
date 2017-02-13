@@ -18,4 +18,5 @@
       private: no
 
   roles:
+    - {role: flowmaster-git-clone}
     - {role: flowmaster-s3-upload}
