@@ -1,0 +1,13 @@
+---
+# tasks file for flowmaster-docker-cloudera
+- name: cloudera
+  docker_image:
+    name: cloudera/clusterdock
+  become: yes
+- name: cloudera
+  docker_image:
+    name: cloudera/quickstart
+  become: yes
+
+- shell: source /dev/stdin <<< "$(curl -sL http://tiny.cloudera.com/clusterdock.sh)"
+
