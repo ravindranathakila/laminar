@@ -1,2 +1,5 @@
 ---
 # defaults file for flowmaster-s3-upload
+
+flowmaster_s3_upload_path: "{{ role_path }}/../{{ flowmaster-git-clone }}/files"
+flowmaster_s3_upload_bucket: test

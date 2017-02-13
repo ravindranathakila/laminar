@@ -1,2 +1,4 @@
 ---
 # tasks file for flowmaster-s3-upload
+
+- command: "aws s3 cp {{ flowmaster_s3_upload_path }} s3://{{ flowmaster_s3_upload_bucket }} --recursive"

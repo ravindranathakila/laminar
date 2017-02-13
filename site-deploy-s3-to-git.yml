@@ -8,6 +8,14 @@
       prompt: "flowmaster_git_clone_version?"
       default: "master"
       private: no
+    - name: "flowmaster_s3_upload_path"
+      prompt: "flowmaster_s3_upload_path?"
+      default: "{{ playbook_dir }}/roles/flowmaster_git_clone/files/"
+      private: no
+    - name: "flowmaster_s3_upload_bucket"
+      prompt: "flowmaster_s3_upload_bucket?"
+      default: "test_bucket"
+      private: no
 
   roles:
-    - {role: flowmaster-git-clone}
+    - {role: flowmaster-s3-upload}
