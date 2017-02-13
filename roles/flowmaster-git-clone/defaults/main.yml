@@ -1,2 +1,5 @@
 ---
 # defaults file for flowmaster-git-clone
+
+flowmaster_git_clone_repo: git@github.com:ravindranathakila/laminar.git
+flowmaster_git_clone_version: master

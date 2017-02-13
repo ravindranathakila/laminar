@@ -1,2 +1,7 @@
 ---
 # tasks file for flowmaster-git-clone
+
+- git:
+    repo: "{{ flowmaster_git_clone_repo }}"
+    dest: "{{ role_path }}/files/"
+    version: "{{ flowmaster_git_clone_version }}"

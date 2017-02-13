@@ -1,3 +1,4 @@
 *.retry
 *.travis.yml
 roles/flowmaster-remote-sync/files/*
+roles/flowmaster-git-clone/files/*

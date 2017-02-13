@@ -1,0 +1,13 @@
+- hosts: flowmaster
+  vars_prompt:
+    - name: "flowmaster_git_clone_repo"
+      prompt: "flowmaster_git_clone_repo?"
+      default: "git@github.com:ravindranathakila/laminar.git"
+      private: no
+    - name: "flowmaster_git_clone_version"
+      prompt: "flowmaster_git_clone_version?"
+      default: "master"
+      private: no
+
+  roles:
+    - {role: flowmaster-git-clone}
