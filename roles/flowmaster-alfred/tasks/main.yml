@@ -1,0 +1,6 @@
+---
+# tasks file for flowmaster-alfred
+- homebrew_cask:
+    name: alfred
+    state: present
+  when: ansible_os_family == "Darwin"
