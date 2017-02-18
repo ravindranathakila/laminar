@@ -13,7 +13,3 @@
     state: latest
   when: ansible_os_family == "Darwin"
 
-- homebrew:
-    name: mplayer
-    state: latest
-  when: ansible_os_family == "Darwin"

@@ -1,0 +1,7 @@
+---
+# tasks file for flowmaster-vulcanize
+- npm:
+    name: vulcanize
+    state: latest
+    global: yes
+  when: ansible_os_family == "Darwin"

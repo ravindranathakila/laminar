@@ -1,0 +1,7 @@
+---
+# tasks file for flowmaster-mplayer
+
+- homebrew:
+    name: mplayer
+    state: latest
+  when: ansible_os_family == "Darwin"

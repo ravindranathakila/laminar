@@ -4,5 +4,3 @@
   docker_image:
     name: quay.io/coreos/etcd
   become: yes
-
-f

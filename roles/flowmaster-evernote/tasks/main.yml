@@ -1,0 +1,6 @@
+---
+# tasks file for flowmaster-evernote
+- homebrew_cask:
+    name: evernote
+    state: present
+  when: ansible_os_family == "Darwin"

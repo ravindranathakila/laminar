@@ -1,9 +1,11 @@
 ---
 # tasks file for flowmaster-spring-springboot
-
 - homebrew_tap:
     name: pivotal/tap
+  when: ansible_os_family == "Darwin"
 
 - homebrew:
     name: springboot
     state: present
+  when: ansible_os_family == "Darwin"
+

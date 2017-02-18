@@ -1,0 +1,40 @@
+---
+# tasks file for flowmaster-virtualbox
+
+# tasks file for flowmaster-kubernetes-minikube
+# https://github.com/kubernetes/minikube/releases
+# minikube requires VirtualBox, and VirtualBox requires mainly a GUI based linux distro.
+#- yum:
+#    name: "{{item}}"
+#    state: latest
+#  with_items:
+#    - gcc
+#    - make
+#    - patch
+#    - dkms
+#    - libgomp
+#    - kernel-headers
+#    - kernel-devel
+#    - fontforge
+#    - binutils
+#    - glibc-headers
+#    - glibc-devel
+#    - qt
+#  become: yes
+#  when: ansible_os_family == "RedHat"
+#- yum:
+#    name: virtualbox
+#    state: latest
+#  become: yes
+#  when: ansible_os_family == "RedHat"
+
+- apt:
+    name: virtualbox
+    state: latest
+  become: yes
+  when: ansible_os_family == "Debian"
+
+- homebrew:
+    name: virtualbox
+    state: present
+  when: ansible_os_family == "Darwin"
