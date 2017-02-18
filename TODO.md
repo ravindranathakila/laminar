@@ -58,7 +58,7 @@ Polymer, Angular 2
 
 # Information Flows 
 
-Mailing lists, IRC, Twitter 
+Mailing lists, Twitter 
 
 https://github.com/sferik/t/blob/master/README.md
 
